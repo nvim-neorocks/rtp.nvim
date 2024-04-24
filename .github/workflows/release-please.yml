@@ -20,5 +20,4 @@ jobs:
         with:
           release-type: simple
           package-name: rtp.nvim
-          signoff: "Marc Jakobi<marc@jakobi.dev>"
-          token: ${{ secrets.GH_TOKEN_FOR_UPDATES }}
+          token: ${{ secrets.PAT }}
