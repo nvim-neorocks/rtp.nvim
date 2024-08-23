@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/nvim-neorocks/rtp.nvim/compare/v1.1.0...v1.2.0) (2024-08-23)
+
+
+### Features
+
+* **docs:** add more detailed description ([b044c5e](https://github.com/nvim-neorocks/rtp.nvim/commit/b044c5e94a92f9d168cfe4dcd13153b3dcfd2f93))
+
 ## [1.1.0](https://github.com/nvim-neorocks/rtp.nvim/compare/v1.0.0...v1.1.0) (2024-08-23)
 
 
