@@ -4,6 +4,9 @@
 ---
 ---Source |plugin| and |ftdetect| directories on the Neovim runtimepath
 ---
+---If you install plugins to a different location than the |packpath|,
+---you can use this library to source their
+---|plugin|, |ftdetect| and |after-directory| scripts.
 ---@brief ]]
 
 -- Copyright (C) 2024 Neorocks Org.

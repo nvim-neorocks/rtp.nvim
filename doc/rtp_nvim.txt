@@ -4,6 +4,9 @@
 
 Source |plugin| and |ftdetect| directories on the Neovim runtimepath
 
+If you install plugins to a different location than the |packpath|,
+you can use this library to source their
+|plugin|, |ftdetect| and |after-directory| scripts.
 
 rtp_nvim.source_rtp_dir({dir})                         *rtp_nvim.source_rtp_dir*
     Source the `plugin` and `ftdetect` directories.
