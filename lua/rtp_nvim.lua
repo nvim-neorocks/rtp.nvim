@@ -23,6 +23,7 @@ local _sourced_ftdetect = {}
 local RtpSourceDir = {
     plugin = "plugin",
     ftdetect = "ftdetect",
+    after_plugin = vim.fs.joinpath("after", "plugin"),
 }
 
 ---Recursively iterate over a directory's children
@@ -77,11 +78,22 @@ local function source_ftdetect(dir)
     end
 end
 
+---@param dir string
+local function source_after_plugin(dir)
+    source(RtpSourceDir.after_plugin, dir)
+end
+
 ---Source the `plugin` and `ftdetect` directories.
 ---@param dir string The runtime directory to source
 function rtp_nvim.source_rtp_dir(dir)
     source_plugin(dir)
     source_ftdetect(dir)
+end
+
+---Source the `after` scripts
+---@param dir string The runtime directory to source
+function rtp_nvim.source_after_plugin_dir(dir)
+    source_after_plugin(dir)
 end
 
 return rtp_nvim
